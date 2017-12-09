@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_user"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.esha.quizapp.RegisterStudent">
+
+
+    <TextView
+        android:id="@+id/welcomeStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/tellusaboutyou" />
+
+    <TextView
+        android:id="@+id/nameStudentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/welcomeStudent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="51dp"
+        android:text="@string/studentRegisterName" />
+
+    <EditText
+        android:id="@+id/studentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/welcomeStudent"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/redId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameStudentId"
+        android:layout_alignStart="@+id/nameStudentId"
+        android:layout_below="@+id/studentName"
+        android:layout_marginTop="45dp"
+        android:text="@string/studentRegisterRedId" />
+
+    <EditText
+        android:id="@+id/redIdHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/studentName"
+        android:layout_alignRight="@+id/studentName"
+        android:layout_below="@+id/studentName"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/redid"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/yearStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/redId"
+        android:layout_alignLeft="@+id/redId"
+        android:layout_alignRight="@+id/redId"
+        android:layout_alignStart="@+id/redId"
+        android:layout_below="@+id/redIdHere"
+        android:layout_marginTop="43dp"
+        android:text="@string/year" />
+
+    <Spinner
+        android:id="@+id/spinnerStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearStudent"
+        android:layout_alignLeft="@+id/redIdHere"
+        android:layout_alignStart="@+id/redIdHere" />
+
+    <TextView
+        android:id="@+id/majorStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yearStudent"
+        android:layout_alignStart="@+id/yearStudent"
+        android:layout_below="@+id/yearStudent"
+        android:layout_marginTop="48dp"
+        android:text="@string/major" />
+
+    <Spinner
+        android:id="@+id/spinner2Student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerStudent"
+        android:layout_alignStart="@+id/spinnerStudent"
+        android:layout_alignTop="@+id/majorStudent" />
+
+    <Button
+        android:id="@+id/registerStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_toLeftOf="@+id/spinner2Student"
+        android:layout_toStartOf="@+id/spinner2Student"
+        android:text="@string/studentRegisterButton" />
+
+    <TextView
+        android:id="@+id/orId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/registerStudent"
+        android:layout_alignBottom="@+id/registerStudent"
+        android:layout_centerHorizontal="true"
+        android:text="OR" />
+
+    <Button
+        android:id="@+id/loginStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/registerStudent"
+        android:layout_alignEnd="@+id/redIdHere"
+        android:layout_alignRight="@+id/redIdHere"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="@string/studentLoginButton" />
+
+    <TextView
+        android:id="@+id/StudentEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/majorStudent"
+        android:layout_alignStart="@+id/majorStudent"
+        android:layout_below="@+id/spinner2Student"
+        android:layout_marginTop="29dp"
+        android:text="@string/studentRegisterEmail" />
+
+    <EditText
+        android:id="@+id/StudentEmailHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StudentEmailId"
+        android:layout_alignBottom="@+id/StudentEmailId"
+        android:layout_alignLeft="@+id/spinner2Student"
+        android:layout_alignStart="@+id/spinner2Student"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/StudentPasswordId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/StudentEmailId"
+        android:layout_alignStart="@+id/StudentEmailId"
+        android:layout_below="@+id/StudentEmailHere"
+        android:layout_marginTop="20dp"
+        android:text="@string/studentRegisterPassword" />
+
+    <EditText
+        android:id="@+id/StudentPasswordHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/StudentEmailHere"
+        android:layout_alignRight="@+id/StudentEmailHere"
+        android:layout_below="@+id/StudentEmailHere"
+        android:ems="10"
+        android:inputType="textPassword" />
+</RelativeLayout>
+

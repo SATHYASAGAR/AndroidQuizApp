@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_user"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.esha.quizapp.TestToTakeStudent">
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="370dp"
+        android:layout_height="251dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <TextView
+        android:id="@+id/infoTestToTake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/list"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/list"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:padding="5sp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/testsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_alignLeft="@+id/list"
+        android:layout_alignStart="@+id/list"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="Tests Available"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/viewProfilesId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infoTestToTake"
+        android:layout_alignStart="@+id/infoTestToTake"
+        android:layout_below="@+id/infoTestToTake"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="26dp"
+        android:width="100sp"
+        android:height="20sp"
+        android:gravity="center"
+        android:text="View Profiles"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/profileSpinnerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/list"
+        android:layout_alignRight="@+id/list"
+        android:layout_alignTop="@+id/viewProfilesId"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp" />
+
+    <Button
+        android:id="@+id/addClassButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_alignLeft="@+id/viewProfilesId"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignStart="@+id/viewProfilesId"
+        android:layout_below="@+id/profileSpinnerID"
+        android:layout_marginTop="19dp"
+        android:width="160sp"
+        android:background="@null"
+        android:gravity="left"
+        android:padding="10sp"
+        android:text="Add Class" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/addClassButtonId"
+        android:layout_toEndOf="@+id/viewProfilesId"
+        android:layout_toRightOf="@+id/viewProfilesId"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+</RelativeLayout>
+
+

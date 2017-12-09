@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.esha.quizapp.ProfileDefaultFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/nameHolderId"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="203dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/redHolderId"
+            android:layout_width="180sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nameHolderId"
+            android:layout_alignBottom="@+id/nameHolderId"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="left"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/infoIdWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/redHolderId"
+            android:layout_alignLeft="@+id/infoInstructions"
+            android:layout_alignStart="@+id/infoInstructions"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:gravity="left"
+            android:text="@string/hello"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/infoInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/infoIdWelcome"
+            android:layout_marginLeft="115dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="37dp"
+            android:text="@string/instructions"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/instructionDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/infoInstructions"
+            android:layout_marginTop="14dp"
+            android:width="400dp"
+            android:height="100dp"
+            android:gravity="center"
+            android:text="@string/instructionsdetails" />
+
+        <ImageView
+            android:id="@+id/imageViewUniversityId"
+            android:layout_width="wrap_content"
+            android:layout_height="211dp"
+            android:layout_above="@+id/infoIdWelcome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="22dp"
+            app:srcCompat="@drawable/hepnerhall" />
+
+    </RelativeLayout>
+
+</FrameLayout>

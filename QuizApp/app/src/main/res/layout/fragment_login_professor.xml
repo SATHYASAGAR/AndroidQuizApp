@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lib"
+    tools:context="com.example.esha.quizapp.LoginProfessor">
+
+
+    <TextView
+        android:id="@+id/professorLoginEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoAboutLoginProfessor"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="77dp"
+        android:layout_toLeftOf="@+id/infoAboutLoginProfessor"
+        android:layout_toStartOf="@+id/infoAboutLoginProfessor"
+        android:text="@string/professorEmailLogin"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/professorLoginEmailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/professorLoginEmailTextView"
+        android:layout_alignBottom="@+id/professorLoginEmailTextView"
+        android:layout_alignLeft="@+id/professorLoginPasswordEditText"
+        android:layout_alignStart="@+id/professorLoginPasswordEditText" />
+
+    <TextView
+        android:id="@+id/professorLoginPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/professorLoginEmailTextView"
+        android:layout_alignStart="@+id/professorLoginEmailTextView"
+        android:layout_below="@+id/professorLoginEmailTextView"
+        android:layout_marginTop="71dp"
+        android:text="@string/professorPasswordLogin"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/professorLoginPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignBottom="@+id/professorLoginPasswordTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <Button
+        android:id="@+id/loginHereProfessorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/memberSignUpId"
+        android:layout_marginBottom="43dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/professorLoginEmailTextView"
+        android:layout_toRightOf="@+id/professorLoginEmailTextView"
+        android:text="@string/professorLoginButton" />
+
+    <TextView
+        android:id="@+id/infoAboutLoginProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="200sp"
+        android:height="50dp"
+        android:gravity="center"
+        android:text="@string/professorLogin"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/memberSignUpId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profRegisterId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="94dp"
+        android:gravity="center"
+        android:text="@string/nomember"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/profRegisterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="@string/register"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/loginHereProfessorId"
+        android:layout_alignStart="@+id/loginHereProfessorId" />
+
+</RelativeLayout>
+

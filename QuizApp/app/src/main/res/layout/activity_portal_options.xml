@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_user"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.esha.quizapp.PortalOptions">
+
+
+    <Button
+        android:id="@+id/addTestId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setNameHere"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:text="Add Test"
+        tools:text="@string/addtest" />
+
+    <TextView
+        android:id="@+id/setNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/setNameHere"
+        android:layout_alignRight="@+id/setNameHere"
+        android:layout_below="@+id/infoID"
+        android:layout_marginTop="19dp"
+        android:text="Set Test Name"
+        tools:text="@string/setname" />
+
+    <EditText
+        android:id="@+id/setNameHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setNameId"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/infoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        tools:text="@string/welcomeprofessor" />
+
+    <TextView
+        android:id="@+id/addClassId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/setNameHere"
+        android:layout_alignRight="@+id/setNameHere"
+        android:layout_below="@+id/setNameHere"
+        android:layout_marginTop="37dp"
+        android:text="Add Class" />
+
+    <EditText
+        android:id="@+id/testNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addClassButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addTestId"
+        android:layout_alignStart="@+id/addTestId"
+        android:layout_centerVertical="true"
+        android:text="@string/addClass" />
+</RelativeLayout>
+

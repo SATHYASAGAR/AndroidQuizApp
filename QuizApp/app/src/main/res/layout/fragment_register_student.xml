@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lib"
+
+    tools:context="com.example.esha.quizapp.RegisterStudent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/helpusknow"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/nameStudentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/welcomeStudent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/studentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nameStudentId"
+            android:layout_alignBottom="@+id/nameStudentId"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/StudentPasswordId"
+            android:layout_toRightOf="@+id/StudentPasswordId"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/redId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nameStudentId"
+            android:layout_alignStart="@+id/nameStudentId"
+            android:layout_below="@+id/studentName"
+            android:layout_marginTop="45dp"
+            android:text="@string/redid"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/redIdHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/studentName"
+            android:layout_alignRight="@+id/studentName"
+            android:layout_below="@+id/studentName"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:hint="@string/studentRedId"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/yearStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/redId"
+            android:layout_alignLeft="@+id/redId"
+            android:layout_alignRight="@+id/redId"
+            android:layout_alignStart="@+id/redId"
+            android:layout_below="@+id/redIdHere"
+            android:layout_marginTop="43dp"
+            android:text="@string/year"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinnerStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/yearStudent"
+            android:layout_alignLeft="@+id/redIdHere"
+            android:layout_alignStart="@+id/redIdHere"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/majorStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yearStudent"
+            android:layout_alignStart="@+id/yearStudent"
+            android:layout_below="@+id/yearStudent"
+            android:layout_marginTop="48dp"
+            android:text="@string/major"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner2Student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinnerStudent"
+            android:layout_alignStart="@+id/spinnerStudent"
+            android:layout_alignTop="@+id/majorStudent"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/registerStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp"
+            android:layout_toLeftOf="@+id/StudentPasswordHere"
+            android:layout_toStartOf="@+id/StudentPasswordHere"
+            android:text="@string/register"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/orId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/registerStudent"
+            android:layout_alignBottom="@+id/registerStudent"
+            android:layout_centerHorizontal="true"
+            android:text="@string/orgoto"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/loginStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/StudentPasswordHere"
+            android:layout_alignRight="@+id/StudentPasswordHere"
+            android:layout_alignTop="@+id/registerStudent"
+            android:text="@string/login"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/StudentEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/majorStudent"
+            android:layout_alignStart="@+id/majorStudent"
+            android:layout_below="@+id/spinner2Student"
+            android:layout_marginTop="29dp"
+            android:text="@string/email"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/StudentEmailHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/StudentEmailId"
+            android:layout_alignBottom="@+id/StudentEmailId"
+            android:layout_alignLeft="@+id/spinner2Student"
+            android:layout_alignStart="@+id/spinner2Student"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/StudentPasswordId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/StudentEmailId"
+            android:layout_alignStart="@+id/StudentEmailId"
+            android:layout_below="@+id/StudentEmailHere"
+            android:layout_marginTop="20dp"
+            android:text="@string/password"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/StudentPasswordHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/StudentEmailHere"
+            android:layout_alignRight="@+id/StudentEmailHere"
+            android:layout_below="@+id/StudentEmailHere"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

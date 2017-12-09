@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lib"
+    tools:context="com.example.esha.quizapp.LoginStudent">
+
+
+    <TextView
+        android:id="@+id/StudentEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/StudentEmailHere"
+        android:layout_alignLeft="@+id/StudentPasswordId"
+        android:layout_alignStart="@+id/StudentPasswordId" />
+
+    <EditText
+        android:id="@+id/StudentEmailHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/StudentPasswordHere"
+        android:layout_alignLeft="@+id/loginHereStudentId"
+        android:layout_alignStart="@+id/loginHereStudentId"
+        android:layout_marginBottom="27dp" />
+
+    <TextView
+        android:id="@+id/StudentPasswordId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/password"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/StudentPasswordHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/StudentPasswordId"
+        android:layout_alignLeft="@+id/StudentEmailHere"
+        android:layout_alignStart="@+id/StudentEmailHere"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/loginHereStudentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudentPasswordHere"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="@string/login"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/infoAboutLoginStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:width="200sp"
+        android:height="50dp"
+        android:gravity="center"
+        android:text="@string/studentLogin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/notAMemberID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginHereStudentId"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:text="@string/nomember"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/takeToRegisterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/StudentPasswordHere"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/StudentPasswordHere"
+        android:layout_marginBottom="13dp"
+        android:text="@string/register" />
+
+</RelativeLayout>
+

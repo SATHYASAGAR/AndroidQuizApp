@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.esha.quizapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/easyquiz"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddQuestionsToTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".PortalOptions"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContainerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".OptionsForStudents"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TestQuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StudentProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ContainerForProfessor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TestToTakeStudent"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileContainer"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ClassListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DashboardNavigationActivity"
+            android:label="@string/title_activity_professor_options_nav"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddStudentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TestInstructionsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddTestActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

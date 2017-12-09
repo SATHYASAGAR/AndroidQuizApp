@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_addClass"
+            android:icon="@drawable/add"
+            android:title="@string/addClassMenu" />
+        <item
+            android:id="@+id/nav_addTest"
+            android:icon="@drawable/createtest"
+            android:title="@string/addTestMenu" />
+        <item
+            android:id="@+id/nav_addStudents"
+            android:icon="@drawable/addornot"
+            android:title="@string/addStudentToClass" />
+        <item
+            android:id="@+id/nav_viewScores"
+            android:icon="@drawable/seeprogress"
+            android:title="@string/viewScores" />
+
+        <item
+            android:id="@+id/nav_professorHome"
+            android:icon="@drawable/homesymbol"
+            android:title="@string/homeMenu" />
+    </group>
+</menu>

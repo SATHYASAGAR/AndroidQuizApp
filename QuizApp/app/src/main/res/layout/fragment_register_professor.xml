@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lib"
+    tools:context="com.example.esha.quizapp.RegisterProfessor">
+
+    <TextView
+        android:id="@+id/welcomeProfessor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:text="@string/tellusaboutyou"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/nameProfessorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/professorRegisterName"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_below="@+id/welcomeProfessor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/professorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nameProfessorId"
+            android:layout_alignBottom="@+id/nameProfessorId"
+            android:layout_alignLeft="@+id/professorRedIdHere"
+            android:layout_alignStart="@+id/professorRedIdHere"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/instructorIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameProfessorId"
+        android:layout_alignStart="@+id/nameProfessorId"
+        android:layout_below="@+id/professorName"
+        android:layout_marginTop="45dp"
+        android:text="@string/professorInstructirRegister"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/professorRedIdHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/instructorIdTextView"
+        android:layout_alignBottom="@+id/instructorIdTextView"
+        android:layout_alignLeft="@+id/ProfessorEmailHere"
+        android:layout_alignStart="@+id/ProfessorEmailHere"
+        android:ems="10"
+        android:hint="@string/instructorId"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/registerProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/professorRegisterButtonValue"
+        android:layout_alignBaseline="@+id/loginProfessor"
+        android:layout_alignBottom="@+id/loginProfessor"
+        android:layout_toLeftOf="@+id/ProfessorPasswordHere"
+        android:layout_toStartOf="@+id/ProfessorPasswordHere" />
+
+    <Button
+        android:id="@+id/loginProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/professorRegisterLoginValue"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ProfessorPasswordHere"
+        android:layout_alignEnd="@+id/ProfessorPasswordHere"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/ProfessorEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/professorRegisterEmail"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/ProfessorEmailHere"
+        android:layout_alignLeft="@+id/instructorIdTextView"
+        android:layout_alignStart="@+id/instructorIdTextView" />
+
+        <EditText
+            android:id="@+id/ProfessorEmailHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/professorRedIdHere"
+            android:layout_toRightOf="@+id/instructorIdTextView"
+            android:layout_toEndOf="@+id/instructorIdTextView"
+            android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/ProfessorPasswordId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/professorRegisterPassword"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_below="@+id/ProfessorEmailId"
+        android:layout_alignLeft="@+id/ProfessorEmailId"
+        android:layout_alignStart="@+id/ProfessorEmailId"
+        android:layout_marginTop="49dp" />
+
+        <EditText
+            android:id="@+id/ProfessorPasswordHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_alignBaseline="@+id/ProfessorPasswordId"
+            android:layout_alignBottom="@+id/ProfessorPasswordId"
+            android:layout_alignLeft="@+id/ProfessorEmailHere"
+            android:layout_alignStart="@+id/ProfessorEmailHere" />
+
+</RelativeLayout>

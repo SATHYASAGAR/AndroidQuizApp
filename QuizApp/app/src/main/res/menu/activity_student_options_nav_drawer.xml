@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_requestToEnroll"
+            android:icon="@drawable/add"
+            android:title="@string/enrollToAClass" />
+        <item
+            android:id="@+id/nav_enrollRequestStatus"
+            android:icon="@drawable/classstatus"
+            android:title="@string/enrollStatus" />
+        <item
+            android:id="@+id/nav_scheduledTests"
+            android:icon="@drawable/scheduledtest"
+            android:title="@string/scheduledTests" />
+        <item
+            android:id="@+id/nav_testsTaken"
+            android:icon="@drawable/testtaken"
+            android:title="@string/testsTaken" />
+        <item
+            android:id="@+id/nav_studentHome"
+            android:icon="@drawable/homesymbol"
+            android:title="@string/homeMenuStudents" />
+    </group>
+</menu>
