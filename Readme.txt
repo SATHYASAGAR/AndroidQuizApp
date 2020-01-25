@@ -39,7 +39,7 @@ Email ID and password for testing:
 Student email:jack@gmail.com
 Student password: qwerqwer
 
-Professor email:dan@gmail.com
+Professor email:prof@gmail.com
 Professor password: qwerqwer
 
 ----
